@@ -1,0 +1,39 @@
+.company-item-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  height: 9rem;
+}
+
+.company-item-image {
+  flex: 2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.company-item-info {
+  flex: 3;
+  align-self: start;
+  position: relative;
+  height: 100%;
+}
+
+.company-item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.company-item-detail {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.company-item-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

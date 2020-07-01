@@ -1,0 +1,28 @@
+.bottom-screen {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+  height: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__btn {
+  color: #6f6f6f;
+}
+
+.nav__btn:hover {
+  color: #4ec7d9;
+}
