@@ -8,8 +8,8 @@ function App() {
   return (
     <div className='container'>
       <TopNav />
-      <TodaySpecial />
-      <CompanyList />
+      <TodaySpecial title="Today's Special" />
+      <CompanyList title='Best recommendation' />
       <BottomNav />
     </div>
   );
