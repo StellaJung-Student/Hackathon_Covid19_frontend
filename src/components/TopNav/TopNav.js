@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopNav.css';
 
-const TopNav = ({ handleLogin, isLoggedIn }) => {
+const TopNav = ({ displayLogIn, displaySignUp, isLoggedIn }) => {
   console.log(isLoggedIn);
   return (
     <header className='screen-header'>
@@ -36,11 +36,13 @@ const TopNav = ({ handleLogin, isLoggedIn }) => {
               </>
             ) : (
               <>
-                <div className='top-meun__item' onClick={handleLogin}>
+                <div className='top-meun__item' onClick={displayLogIn}>
                   Sign in
                 </div>
                 <div className='top-meun__item'>|</div>
-                <div className='top-meun__item'>Sign up</div>
+                <div className='top-meun__item' onClick={displaySignUp}>
+                  Sign up
+                </div>
               </>
             )}
           </div>

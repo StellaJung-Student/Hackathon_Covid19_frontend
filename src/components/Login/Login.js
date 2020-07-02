@@ -4,9 +4,9 @@ import { loginUser } from '../../actions/user_actions';
 
 import './Login.css';
 import { Formik } from 'formik';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Login = ({ handleLogin }) => {
+const Login = ({ displayLogIn }) => {
   const [submitting, setSubmitting] = useState(false);
   const dispatch = useDispatch();
   return (
@@ -54,12 +54,12 @@ const Login = ({ handleLogin }) => {
                 localStorage.setItem('name', `${firstName} ${lastName}`);
                 resetForm();
                 setSubmitting(false);
-                handleLogin();
+                displayLogIn();
               })
               .catch((err) => console.log(err));
-            // eslint-disable-next-line no-unused-expressions
-            <Redirect to='/' />;
-            window.location.href = '/';
+            setTimeout(() => {
+              window.location.href = '/';
+            }, 2000);
           }}
         >
           {({
