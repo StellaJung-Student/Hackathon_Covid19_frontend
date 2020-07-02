@@ -72,9 +72,9 @@ const SignUp = ({ displaySignUp }) => {
                 const {
                   payload: { data, token },
                 } = res;
-                const { firstName, lastName } = data.user;
+                const { firstName } = data.user;
                 localStorage.setItem('token', token);
-                localStorage.setItem('name', `${firstName} ${lastName}`);
+                localStorage.setItem('name', `${firstName}`);
                 resetForm();
                 setSubmitting(false);
                 displaySignUp();

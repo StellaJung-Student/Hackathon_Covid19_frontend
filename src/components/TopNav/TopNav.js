@@ -18,7 +18,7 @@ const TopNav = ({ displayLogIn, displaySignUp, isLoggedIn }) => {
       <div className='screen-header-info'>
         <div className='screen-header-info__top'>
           <div className='user-info'>
-            Hello, {isLoggedIn ? localStorage.getItem('name') : 'Guest!'}
+            Hi, {isLoggedIn ? localStorage.getItem('name') : 'Guest!'}
           </div>
           <div className='top-menu'>
             {isLoggedIn ? (
