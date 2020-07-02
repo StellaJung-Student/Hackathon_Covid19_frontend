@@ -1,0 +1,88 @@
+.signup-container {
+  width: 380px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -190px;
+  margin-top: -150px;
+  background: white;
+  border: 0.5px solid black;
+}
+
+.signup-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d2d2d2;
+  padding: 10px;
+}
+
+.signup-top .logo {
+  flex: 1;
+}
+
+.signup-top h1 {
+  flex: 9;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.signup-main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.signup-main .form-group {
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-around; */
+}
+
+.signup-main .form-group label {
+  flex: 3;
+}
+
+.signup-main .form-group input {
+  flex: 7;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0.5px solid black;
+}
+
+.extra_link {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra_link a {
+  color: #3572a1;
+}
+
+.signup-main .btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-main .btn-container button {
+  margin-top: 1rem;
+  background: #15cc32;
+  padding: 0.8rem 2rem;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+}
+
+.signup-main .btn-container .cancel {
+  background: #db6469;
+}
+
+.social-signup {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}

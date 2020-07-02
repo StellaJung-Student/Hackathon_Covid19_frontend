@@ -1,17 +1,12 @@
 import React from 'react';
-import TopNav from './components/TopNav/TopNav';
-import TodaySpecial from './components/TodaySpecial/TodaySpecial';
-import CompanyList from './components/CompanyList/CompanyList';
-import BottomNav from './components/BottomNav/BottomNav';
+import { Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className='container'>
-      <TopNav />
-      <TodaySpecial title="Today's Special" />
-      <CompanyList title='Best recommendation' />
-      <BottomNav />
-    </div>
+    <Switch>
+      <Route exact to='/' component={Home} />
+    </Switch>
   );
 }
 
