@@ -1,0 +1,86 @@
+.login-container {
+  width: 380px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -190px;
+  margin-top: -150px;
+  background: white;
+  border: 0.5px solid black;
+}
+
+.login-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d2d2d2;
+  padding: 10px;
+}
+
+.login-top .logo {
+  flex: 1;
+}
+
+.login-top h1 {
+  flex: 9;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.login-main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.login-main .form-group {
+  display: flex;
+}
+
+.login-main .form-group label {
+  flex: 3;
+}
+
+.login-main .form-group input {
+  flex: 7;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0.5px solid black;
+}
+
+.extra_link {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra_link a {
+  color: #3572a1;
+}
+
+.login-main .btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-main .btn-container button {
+  margin-top: 1rem;
+  background: #15cc32;
+  padding: 0.8rem 2rem;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+}
+
+.login-main .btn-container .cancel {
+  background: #db6469;
+}
+
+.social-login {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
