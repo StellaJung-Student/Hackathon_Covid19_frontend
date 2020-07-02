@@ -4,7 +4,8 @@ import './MainList.css';
 import CompanyItem from '../CompanyList/CompanyItem/CompanyItem';
 import { Link } from 'react-router-dom';
 
-function MainList() {
+function MainList({ companies }) {
+  console.log(companies);
   return (
     <>
       <div className='detail-menu'>
@@ -15,24 +16,16 @@ function MainList() {
         <Link to='/evaluation'>Close to me</Link>
       </div>
       <ul className='company-list'>
-        <CompanyItem
-          name='Company Name'
-          description='Good restaurant'
-          address='1 Yonge, ON'
-          rating='3'
-        />
-        <CompanyItem
-          name='Company Name'
-          description='Good restaurant'
-          address='1 Yonge, ON'
-          rating='3'
-        />
-        <CompanyItem
-          name='Company Name'
-          description='Good restaurant'
-          address='1 Yonge, ON'
-          rating='3'
-        />
+        {companies.map((e) => (
+          <CompanyItem
+            key={e.name}
+            name={e.name}
+            description={e.description}
+            address={e.address}
+            url={e.url}
+            rating='3'
+          />
+        ))}
       </ul>
     </>
   );

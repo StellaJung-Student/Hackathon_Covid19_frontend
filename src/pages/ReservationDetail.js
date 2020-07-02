@@ -2,10 +2,10 @@ import React from 'react';
 import DetailMenu from '../components/DetailMenu/DetailMenu';
 import Reserve from '../components/Reserve/Reserve';
 
-function ReservationDetail({ params }) {
+function ReservationDetail({ match: params }) {
   return (
     <>
-      <DetailMenu title={'Company Name'} />
+      <DetailMenu title={params.params.id} />
       <Reserve />
     </>
   );

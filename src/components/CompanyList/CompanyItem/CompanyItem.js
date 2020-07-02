@@ -1,19 +1,28 @@
 import React from 'react';
 import './CompanyItem.css';
+import { Link } from 'react-router-dom';
 
-const ComapanyItem = ({ name, description, address, rating }) => {
+const ComapanyItem = ({
+  name,
+  description,
+  address,
+  rating,
+  url = 'https://www.pngfind.com/pngs/m/665-6659827_enterprise-comments-default-company-logo-png-transparent-png.png',
+}) => {
   return (
     <li className='company-item-container'>
       <div
         className='company-item-image'
         style={{
           backgroundImage: `url(
-          'https://i.pinimg.com/564x/d1/fc/33/d1fc335b21f2682ddf4975eed5f2cff9.jpg'
+          ${url}
         )`,
         }}
       ></div>
       <div className='company-item-info'>
-        <div className='company-item-title'>{name}</div>
+        <Link to={`/reservation/${name}`} className='company-item-title'>
+          {name}
+        </Link>
         <div>{description}</div>
         <div className='company-item-bottom'>
           <div>{address}</div>
