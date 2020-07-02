@@ -1,0 +1,54 @@
+.reserve-container {
+  padding: 0.5rem;
+  padding-top: 6rem;
+  height: 30vh;
+  margin-top: 2rem;
+}
+
+.reserve-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.reserve-option-item {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve-option-item h3 {
+  padding-left: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.reserve-option-item select {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.reserve-option-item select option {
+  font-weight: 500;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.reserve-option-item textarea {
+  width: 360px;
+  height: 150px;
+  align-self: center;
+}
+
+.btn-container button {
+  margin-top: 1rem;
+  background: #15cc32;
+  padding: 0.8rem 2rem;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+}

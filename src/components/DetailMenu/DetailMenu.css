@@ -1,0 +1,23 @@
+.detail-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-header__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.detail-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
